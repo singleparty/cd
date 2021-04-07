@@ -1,7 +1,8 @@
 name: Manually triggered workflow
 on:
-  repository_dispatch:
-    types: [opened]
+  push:
+    branches:
+      - master
 jobs:
   say_hello:
     runs-on: ubuntu-latest
