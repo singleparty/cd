@@ -1,0 +1,11 @@
+name: Manually triggered workflow
+on:
+  repository_dispatch:
+    types: [run]
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Hello ${{ github.actor }}!"
+          echo "- in ${{ github.ref }}!"
