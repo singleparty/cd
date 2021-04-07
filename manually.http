@@ -1,0 +1,8 @@
+###
+
+POST https://api.github.com/repos/singleparty/cd/dispatches HTTP/1.1
+Content-Type: application/json
+Accept: application/vnd.github.v3+json
+Authorization: token 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
+
+{"event_type":"manually"}
