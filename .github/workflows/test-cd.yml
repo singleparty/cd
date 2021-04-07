@@ -1,22 +1,11 @@
-name: GitHub Actions Build and Deploy Demo 2
+name: Manually triggered workflow
 on:
-  push:
-    branches:
-      - dev
+  repository_dispatch:
+    types: [opened]
 jobs:
-  build-and-deploy:
+  say_hello:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2.3.1
-
-    - name: Install and Build 🔧
-      run: |
-        npm install
-        npm run build
-
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@4.1.1
-      with:
-        branch: gh-pages
-        folder: build
+      - run: |
+          echo "Hello ${{ github.actor }}!"
+          echo "- in ${{ github.ref }}!"
