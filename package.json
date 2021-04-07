@@ -2,6 +2,7 @@
   "name": "github-cd",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://singleparty.github.io/cd",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
