@@ -1,7 +1,8 @@
 name: Test CD
 on:
-  repository_dispatch:
-    types: [manually]
+  push:
+    branches:
+      - dev
 jobs:
   say_hello:
     runs-on: ubuntu-latest
