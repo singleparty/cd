@@ -1,0 +1,13 @@
+name: 'hello-world-action'
+description: 'hello-world-action description'
+inputs:
+  hello: # id of input
+    description: 'just say something'
+    required: true
+    default: 'hello, world'
+outputs:
+  thx: # id of output
+    description: 'thank you'
+runs:
+  using: 'node12'
+  main: 'index.js'
