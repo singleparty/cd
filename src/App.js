@@ -9,6 +9,9 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <p>
+          修改后push到master分支触发cd
+        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
