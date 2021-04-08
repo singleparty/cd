@@ -9,6 +9,7 @@ jobs:
       - run: |
           echo "Hello ${{ github.actor }}!"
           echo "- in ${{ github.ref }}!"
+          echo "- github object ${{ github }}!"
 
       - uses: actions/checkout@v2.3.1
 
